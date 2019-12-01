@@ -1,10 +1,7 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'Format Julia code'
+description: 'A Julia code formatter based on DocumentFormat.jl'
+author: 'David Anthoff'
 inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
 runs:
   using: 'node12'
   main: 'lib/main.js'
