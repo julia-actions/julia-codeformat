@@ -1,7 +1,6 @@
 name: 'Format Julia code'
 description: 'A Julia code formatter based on DocumentFormat.jl'
 author: 'David Anthoff'
-inputs:
 runs:
   using: 'node12'
   main: 'lib/main.js'
