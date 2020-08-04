@@ -2,6 +2,10 @@ name: 'Format Julia code'
 description: 'A Julia code formatter based on DocumentFormat.jl'
 author: 'David Anthoff'
 
+branding:
+  icon: 'eye'
+  color: 'gray-dark'
+
 runs:
   using: 'composite'
   steps:
