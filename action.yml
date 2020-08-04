@@ -1,6 +1,9 @@
 name: 'Format Julia code'
 description: 'A Julia code formatter based on DocumentFormat.jl'
 author: 'David Anthoff'
+
 runs:
-  using: 'node12'
-  main: 'lib/main.js'
+  using: 'composite'
+  steps:
+    - run: julia --color=yes -e 'using Pkg; Pkg.activate("juliaformatter", shared=true); Pkg.add(["DocumentFormat", "FilePaths"]); using DocumentFormat, FilePaths; DocumentFormat.format(p".")'
+      shell: bash
